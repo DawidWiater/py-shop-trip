@@ -74,6 +74,9 @@ def shop_trip() -> None:
             else round(product_cost, 2)
         print(f"Total cost is {product_cost} dollars")
         print("See you again!\n")
+
+        customer["location"] = selected_shop["location"]
+
         print(f"{name} rides home")
 
         remaining = money - cheapest_cost
